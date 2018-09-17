@@ -1,0 +1,346 @@
+/*
+gray : #7A9F98;
+light-gray: #F7F7F7;
+dark-gray: #4c4c4c;
+green: #1ABC9C;
+white: 100% white;
+
+dark-green: #117964;
+light-green: #28e1bd;
+*/
+
+/*General. Begine.*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+html, body {
+  min-width: 320px;
+  height: 100%;
+  font-size: 14pt;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: #4c4c4c;
+}
+h1{
+	font-size: 2rem;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+a:hover{
+	color: #117964;
+}
+a:click{
+	color: #28e1bd;
+}
+
+
+
+.wrapper{
+	padding: 20px;
+    margin: 0 auto -200px;
+    background-color: white;
+}
+
+.bold{
+	font-weight: bold;
+}
+.green{
+	color: #1ABC9C;
+}
+/*General. Begine.*/
+
+
+/*Header. Begine.*/
+header{
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+header > *{
+	position: relative;
+	display: block;
+}
+header > p{
+	top: 30px;
+	font-weight: bold;
+	color: #7A9F98;
+}
+header > h1{
+	top: 40px;
+}
+.imgWrapper{
+	top: 0px;
+	left: 90px;	
+	width: 100px;
+	height: 50px;
+}
+/*Header. End.*/
+
+
+/*Contacts. Begine.*/
+textarea, input {
+    resize: none; 
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14pt;
+    font-family: 'Ubuntu', sans-serif;
+    border-style:solid;
+    border-color: #F7F7F7;
+    -webkit-appearance: none; /*Atention*/
+}
+textarea {
+    resize: none;
+    height: 300px; 
+}
+input{
+	width: 300px;
+}
+input[type=submit]{
+	width: 320px;
+	color: white;
+	background-color: #1ABC9C;
+	border: none;
+	padding: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+input[type=submit]:hover{
+	background-color: #117964;
+}
+input[type=submit]:click{
+	background-color: #28e1bd;
+}
+
+.contacts{
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+}
+.contacts__form{
+	width: 300px;
+    height: 800px;
+    padding: 20px;
+
+  position: absolute;
+  top: 50px;
+  left: 50%;
+
+  margin: -70px 0 0 -180px;
+}
+.contacts__map{
+	position: absolute;
+    width: 320px;
+    height: 300px;
+    top: 600px;
+    left: 50%;
+    margin: 0 0 0 -160px;
+    background-color: #F7F7F7;
+}
+.contacts__map > p{
+	padding: 20px;
+}
+/*Contacts. End.*/
+
+
+/*Contacts panel. Start.*/
+hr{
+	display: block;
+	position: relative;
+    top: 100px;
+    width: 200px;
+}
+
+.contacts-panel{
+	position: relative;
+	top: 1050px;
+	background-color: #F7F7F7;
+} 
+.contacts-panel__email > .imgWrapper{
+    top: 10px;
+}
+.contacts-panel__item{
+	min-height: 160px;
+	display: block;
+	top: 0px;
+	width: 200px;
+	min-width: 200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.contacts-panel__item > h3{
+	position: relative;
+	top: 50px;
+	text-align: center;
+}
+.contacts-panel__item > p{
+	position: relative;
+	top: 60px;
+	text-align: center;
+}
+.contacts-panel__item > p > a{
+	color: #1ABC9C;
+	text-decoration: none;
+	text-align: center;
+}
+.contacts-panel__item > .imgWrapper{
+	position: relative;
+	left: 80px;
+	height: 20px;
+	width: 40px;
+}
+.contacts-panel__open > .imgWrapper{
+	width: 50px;
+}
+.contacts-panel__email > .imgWrapper{
+	width: 60px;
+}
+.contacts-panel__item > h3{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.vertical-line{
+	display: none;
+}
+
+/*Contacts panel. Begine.*/
+
+
+
+/*Footer. Begine.*/
+footer{
+	position: relative;
+	top: 1230px;
+	height: 220px;
+	max-width: 100vw;
+	background-color: #1ABC9C;
+	color: white;
+}
+footer > div{
+	max-width: 800px;
+	position: relative;
+	top: 20px;
+	padding: 10px;
+}
+footer > div > p{
+	padding-top: 10px;
+}
+/*Footer. End.*/
+
+
+
+
+
+@media only screen and (min-width:481px){
+  
+/*    .vertical-line{
+    	display: inline-block;
+    	width: 0.1em;
+        background-color: #4c4c4c;
+        height: 100%;
+        float: left;
+        border: 0.1em solid #4c4c4c;
+    }*/
+    footer{
+	top: 1230px;
+    }
+    footer > div > p{
+	margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width:600px){
+	.contacts__form{
+        height: 750px;
+        margin:-70px 0 0 -270px;
+    }
+	textarea, input, .contacts__form{
+		width: 500px;
+    }
+	input[name=name], input[name=email]{
+    	display: inline-block;
+    	width: 210px;
+    }
+    input[name=email]{
+    	margin-right: -23px !important;
+    	float: right;
+        clear: both;
+    }
+    .contacts__map{
+    	width: 530px;
+    	margin:-70px 0 0 -250px;
+    }
+    .contacts-panel{
+		top: 950px;
+	}
+	footer{
+	    top: 1130px;
+    }
+}
+
+@media only screen and (min-width:650px){
+	hr{
+		display: none;
+	}
+	.contacts-panel{
+		top: 1020px;
+	}
+    .contacts-panel__item{
+    	display: inline-block;
+    }
+    .inlineWrapper{
+    	width: 620px;
+    	margin: 0 auto;
+    }
+    footer{
+	    top: 1200px;
+    }
+}
+
+@media only screen and (min-width:1050px){
+    .contacts{
+	position: relative;
+    width: 1050px;
+    left: 50%;
+    margin: 0 0 0 -520px;
+    }
+    .contacts__form, .contacts__map{
+    	display: inline-block;
+    }
+    .contacts__form{
+	width: 500px;
+    height: 500px;
+    padding: 20px;
+
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    }
+    .contacts-panel{
+    	top: 200px;
+    }
+    .inlineWrapper{
+    	width: 900px;
+    }
+    .contacts-panel__item{
+    	width: 290px;
+    }
+    .contacts-panel__item > .imgWrapper{
+    	left: 120px;
+    }
+
+    footer{
+	    top: 380px;
+    }
+
+.contacts__map{
+	position: relative;
+    width: 500px;
+    height: 500px;
+    top: 30px;
+    left: 800px;
+    /*margin: 0 0 0 -150px;*/
+}
+}
